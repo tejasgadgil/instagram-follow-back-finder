@@ -44,3 +44,10 @@ acc_that_i_dont_followback = followers - followees
 print("all accounts that follow me, but I dont follow them back")
 for account in acc_that_i_dont_followback:
     print(account.username)
+
+# print a list of all accounts that are mutuals with me
+mutuals_acc = followers.intersection(followees)
+
+print("accounts that are mutuals with me")
+for account in mutuals_acc:
+    print(account.username)
